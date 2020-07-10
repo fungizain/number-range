@@ -1,6 +1,6 @@
 def range_spliter(start, end, distance):
     if not (isinstance(start, int) and isinstance(end, int) and isinstance(distance, int)):
-        return "Fuck you input integer ar!"
+        return "Those variable shd be integer."
     num_range = end - start
     steps, remainder = num_range // distance, num_range % distance
     l = [f"{start + i * distance}-{start + (i + 1) * distance - 1}" for i in range(steps)]
